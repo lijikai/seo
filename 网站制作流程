@@ -1,0 +1,8 @@
+location /{
+        try_files $uri $uri/ /list.php?$args;
+    }
+
+location ~* \.db3$
+{
+     deny all;
+}
